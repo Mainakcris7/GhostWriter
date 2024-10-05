@@ -1,0 +1,55 @@
+div.post{
+    width: 500px;
+    outline: 0.1px solid rgba(255, 255, 255, 0.34);
+    background-color: rgba(0, 115, 255, 0.119);
+    border-radius: 10px;
+    padding: 0 1rem 1.5rem 1rem;
+    margin-bottom: 2rem;
+}
+div.post span.category{
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 20px;
+    background-color: rgb(0, 255, 208);
+    color: black;
+    font-weight: 500;
+}
+div.post div.post-creation-time-container{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem 0;
+}
+div.post-creation-time-container div.date-container{
+    display: flex;
+    font-size: 0.5rem;
+    gap: 5px;
+    align-items: center;
+}
+div.date-container p{
+    font-size: 0.7rem;
+    opacity: 0.9;
+}
+div.post{
+    & h2{
+        padding: 0.5rem 0;
+    }
+    & span.category{
+        margin-bottom: 0.8rem;
+    }
+    & p.post-content{
+        text-align: center;
+        margin-bottom: 1.2rem;
+    }
+    & button.post-increase-star{
+        font-weight: 600;
+    }
+}
+a.expand-post{
+    margin-left: 5px;
+    color: grey;
+    cursor: pointer;
+}
+a.expand-post:hover{
+    text-decoration: underline;
+}

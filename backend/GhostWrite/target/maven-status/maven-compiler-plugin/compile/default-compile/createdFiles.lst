@@ -1,0 +1,9 @@
+com\mainak\GhostWrite\error\PostError.class
+com\mainak\GhostWrite\GhostWriteApplication.class
+com\mainak\GhostWrite\repository\PostSearchRepository.class
+com\mainak\GhostWrite\repository\PostSearchRepositoryImpl.class
+com\mainak\GhostWrite\services\PostService.class
+com\mainak\GhostWrite\error\PostErrorHandler.class
+com\mainak\GhostWrite\repository\PostRepository.class
+com\mainak\GhostWrite\controllers\PostControllers.class
+com\mainak\GhostWrite\models\Posts.class

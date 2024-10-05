@@ -1,0 +1,185 @@
+div.navbar{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--navbar-footer-color); /* Semi-transparent background */
+    backdrop-filter: blur(10px);          /* Blur effect */
+    box-shadow: none;                     /* Optional: Remove box shadow */
+    padding: 2rem 3rem;
+    display: flex;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+}
+
+div.navbar div.logo{
+    height: 30px;
+    transform: scale(1.3);
+    display: flex;
+    position: relative;
+}
+div.logo  img{
+    height: 100%;
+}
+
+ul.menus{
+    margin: 0;
+    margin-left: 1rem;
+    display: flex;
+}
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+ul.menus > li > a{
+    margin-right: 1rem;
+    color: white;
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    transition: all 0.1s ease-in;
+}
+ul.menus > li > a:hover{
+    color: rgb(90, 126, 243);
+}
+ul.menus > li > a.active{
+    font-weight: bold;
+    outline: 1px solid rgb(90, 126, 243);
+    border-radius: 3px;
+    background-color: rgba(90, 126, 243, 0.107);
+    color: rgb(90, 126, 243);
+}
+div.navbar div.search-bar{
+    position: absolute;
+    /* outline: 1px solid red; */
+    display: flex;
+    width: 25%;
+    top: 1.8rem;
+    right: 4rem;
+}
+div.search-bar input[type='text']{
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 0;
+    outline: 2px solid rgb(62, 63, 63);
+    background-color: rgba(43, 43, 43, 0.632);
+}
+div.search-bar input[type='text']:active{
+    outline: 2px solid rgb(0, 126, 244);
+}
+div.search-bar input[type='text']:focus{
+    outline: 2px solid rgb(0, 126, 244);
+}
+div.search-bar input[type='text']:hover:not(:focus){
+    outline: 2px solid rgb(255, 255, 255);
+}
+div.search-bar button#search-btn{
+    right: 0.35rem;
+    position: absolute;
+}
+
+
+/* Mobile styles */
+div.mobile-menus-bar{
+    position: relative;
+    margin-right: 2rem;
+    display: flex;
+    display: none;
+}
+div.mobile-menus-bar div.mobile-logo{
+    margin-left: 0.5rem;
+    height: 1.8rem;
+    position: relative;
+    top: 5px;
+    transform: scale(1.3);
+    display: flex;
+}
+div.mobile-menus-bar div.mobile-logo a{
+    height: 100%;
+}
+div.mobile-menus-bar div.mobile-logo img{
+    height: 100%;
+}
+div.mobile-menus-bar ul{
+    margin-top: 2.5rem;
+    padding: 0;
+    background-color: #242424;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 3px;
+    position: absolute;
+    padding: 1rem 0;
+    transform: translateX(-200px);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.15s ease;
+}
+div.mobile-menus-bar ul li{
+   width: 100%;
+}
+div.mobile-menus-bar ul li a{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    color: white;
+    white-space: nowrap;
+   text-align: center;
+}
+div.mobile-menus-bar ul li a.active{
+    font-weight: bold;
+    background-color: rgba(159, 179, 243, 0.107);
+    color: rgb(90, 126, 243);
+}
+div.mobile-menus-bar ul.show{
+    transform: translateX(-1rem);
+}
+
+@media screen and (max-width: 520px) {
+    div.posts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div.post{
+        width: 90% !important;
+    }
+    div.post h2.post-title{
+        font-size: 1.25rem !important;
+    }
+    div.post p.post-content{
+        font-size: 0.9rem !important;
+    }
+    div.mobile-menus-bar{
+        display: flex;
+        margin-right: 0;
+    }
+    div.navbar{
+        padding: 0.8rem 1rem;
+    }
+    div.navbar ul.menus{
+        display: none;
+    }
+    div.logo{
+        display: none !important;
+    }
+    div.search-bar{
+        width: 62% !important;
+        top: 1rem !important;
+        right: 1rem !important;    
+    }
+    div.search-bar input{
+        font-size: 0.9rem !important;  
+    }
+}
+
+@media screen and (min-width: 520px) and (max-width: 920px){
+    ul.menus{
+        padding-left: 1rem !important;
+    }
+    div.search-bar{
+        width: 42% !important;
+        right: 1rem !important;    
+    }
+}

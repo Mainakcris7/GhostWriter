@@ -1,0 +1,6 @@
+div.posts-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
