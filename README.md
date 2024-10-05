@@ -1,6 +1,6 @@
 # GhostWriter: Post Seamlessly and Anonymously 👻
 
-![logo](frontend\ghost-writer\src\images\logo.png)
+![logo](frontend\ghost-writer\src\images\logo-icon.png)
 
 **GhostWriter** is a platform designed for sharing anonymous posts and confessions, providing users with the opportunity to express their thoughts, feelings, and experiences freely, without revealing their identity. Users can submit posts under specific categories, offering a space to share and discover content without fear of judgment. Additionally, users can assign an `identifier` (hidden) to their posts, making it easy to search for and revisit them later to see how others have responded, using `stars ⭐`.
 
